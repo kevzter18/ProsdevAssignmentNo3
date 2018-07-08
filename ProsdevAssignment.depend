@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1530787206 source:d:\acads\prosdev\jvt-pdev\pdev\archive.cpp
+	"archive.h"
+	<string.h>
+	<sys/stat.h>
+
+1530787206 d:\acads\prosdev\jvt-pdev\pdev\archive.h
+	<stddef.h>
+	<vector>
+	<stdio.h>
+	<inttypes.h>
+	<string>
+
+1531018221 source:d:\acads\prosdev\jvt-pdev\pdev\prosdevassignment.cpp
+	<iostream>
+	"standardfilesystem.h"
+	"reflection.h"
+	"sampleobject.h"
+	"archive.h"
+
+1530787206 d:\acads\prosdev\jvt-pdev\pdev\standardfilesystem.h
+	"filesystem.h"
+	<string>
+
+1530787206 d:\acads\prosdev\jvt-pdev\pdev\filesystem.h
+	<stddef.h>
+
+1531016784 d:\acads\prosdev\jvt-pdev\pdev\reflection.h
+	<string>
+	<vector>
+	<assert.h>
+	<string.h>
+
+1531018010 d:\acads\prosdev\jvt-pdev\pdev\sampleobject.h
+	"reflection.h"
+
+1530787206 source:d:\acads\prosdev\jvt-pdev\pdev\standardfilesystem.cpp
+	"standardfilesystem.h"
+	<stdio.h>
+	<sys/stat.h>
+
+1531018337 source:d:\acads\prosdev\jvt-pdev\pdev\sampleobject.cpp
+	"sampleobject.h"
+	"stddef.h"
+	<iostream>
+
