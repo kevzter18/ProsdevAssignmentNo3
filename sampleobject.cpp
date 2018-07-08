@@ -2,6 +2,8 @@
 // BEGIN: Generated from SampleObject.definition
 #include "sampleobject.h"
 #include "stddef.h"
+#include <fstream>
+using namespace std;
 
 SampleObject::SampleObjectTypeDesc SampleObject::s_Desc;
 

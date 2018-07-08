@@ -1,9 +1,11 @@
 
 #include <iostream>
+#include <string>
 #include "standardfilesystem.h"
 #include "reflection.h"
 #include "sampleobject.h"
 #include "archive.h"
+using namespace std;
 
 void fileSystemExample();
 void reflectionExample();
@@ -23,15 +25,18 @@ void fileSystemExample()
 	std::cout << "======================================================" << std::endl;
 	StandardFileSystem* fs = new StandardFileSystem("D:/Acads/PROSDEV");
 
+    char* fileNameType;
+	cin >> fileNameType;
+
 	// If newfile.txt exists, delete it
-	if (fs->fileExists("newfile.txt"))
+	if (fs->fileExists(fileNameType))
 	{
-		fs->deleteFile("newfile.txt");
+		fs->deleteFile(fileNameType);
 	}
 
 	// Create newfile.txt
 	const char* writeBuffer = "ZA WORUDO";
-	IFile* createdFile = fs->createFile("newfile.txt");
+	IFile* createdFile = fs->createFile(fileNameType);
 	if (!createdFile)
 	{
 		std::cout << "Failed to create a file" << std::endl;
@@ -47,7 +52,7 @@ void fileSystemExample()
 	std::cout << "Successfully created file" << std::endl;
 
 	// Read newfile.txt
-	IFile* openedFile = fs->openFile("newfile.txt");
+	IFile* openedFile = fs->openFile(fileNameType);
 	if (!openedFile)
 	{
 		std::cout << "Failed to open file" << std::endl;
